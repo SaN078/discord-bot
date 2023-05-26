@@ -24,8 +24,11 @@ async def on_message(message):
 
 
 
-#@bot.command
-#async def wave():
+@bot.command
+async def info(ctx):
+    await ctx.send(ctx.guild)
+    await ctx.send(ctx.author)
+    await ctx.send(ctx.message.id)
     
 
 
